@@ -2,6 +2,14 @@
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-08-25
+
+### Added
+- Added a security best practices assessment covering authentication, authorization, secret handling, uploads, injection risks, and dependency findings.
+
+### Changed
+- Upgraded Next.js to 16.3.3 and aligned the Next.js ESLint configuration with the framework version.
+
 ## 2026-08-12
 
 ### Changed
