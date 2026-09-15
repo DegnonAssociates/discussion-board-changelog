@@ -2,6 +2,30 @@
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-09-15
+
+### Fixed
+- Recover interrupted scheduled posts after their locks expire and prevent stale workers from overwriting publication state.
+- Open private conversations at the newest messages, load older history, and poll forward without losing messages beyond the first 50.
+- Save posts, comments, subscriptions, and activity timestamps atomically; show notification failures separately from successful saves.
+- Stop digest workers after lease loss and protect progress, delivery markers, and completion from stale executions.
+- Made future recurring-event edits atomic so a failed replacement cannot truncate the existing series.
+- Preserved weekly selections, monthly weekday/date patterns, occurrence counts, and the event timezone when editing recurrence.
+- Kept recurring events at their local time across daylight-saving changes and included moved occurrences in their destination month.
+- Preserved calendar contents after refresh failures, retained saved changes locally, and added a retry control.
+
+## 2026-09-14
+
+### Security
+- Replaced unsigned login cookies with signed, expiring sessions bound to the active account and organization; restricted impersonation to authorized administrators.
+- Added server-side authorization for community content, administrative actions, messaging, subscriptions, uploads, and sync operations.
+- Removed AWS and organization integration credentials from browser-facing configuration and props; routed uploads through the authenticated server.
+- Sanitized saved and displayed rich text, and signed unsubscribe links while directing older links to authenticated preferences.
+- Restricted search results to authorized communities and active, published content before returning them to the browser.
+
+### Changed
+- Added deployment requirements for the shared session signing secret, credential rotation, upload limits, and API authentication in `docs/security-remediation.md`.
+
 ## 2026-08-25
 
 ### Added
