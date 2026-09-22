@@ -6,6 +6,12 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-09-22
+
+### Changed
+- Upgraded Next.js and its ESLint configuration to 16.3.6, with corresponding dependency updates.
+- Replaced the starter README with project setup, background worker, validation, and operational guidance.
+
 ## 2026-09-15
 
 ### Fixed
