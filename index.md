@@ -9,6 +9,8 @@ This changelog was assembled from the repository's git history. The project does
 ## 2026-10-02
 
 ### Added
+- Creating an active Neon or MemberClicks authorization rule in the admin dashboard now queues its role backfill, with a retry option if queuing fails. The rules table includes group-name search and scrolls within a viewport-height section with hidden scrollbars.
+- New authorization automations created in the admin dashboard record their organization's SSO provider as `memberclicks`, `joyn`, or `neoncrm`.
 - Added an administrator-only endpoint to backfill one authorization automation from current Neon or MemberClicks data, appending its role to existing matching users without changing other account or subscription data.
 - Added resumable role-backfill jobs with tenant isolation, rule revision checks, bounded retries, progress reporting, and coordination with full account syncs for the same instance.
 
