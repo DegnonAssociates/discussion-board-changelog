@@ -12,6 +12,9 @@ This changelog was assembled from the repository's git history. The project does
 - Added an administrator-only endpoint to backfill one authorization automation from current Neon or MemberClicks data, appending its role to existing matching users without changing other account or subscription data.
 - Added resumable role-backfill jobs with tenant isolation, rule revision checks, bounded retries, progress reporting, and coordination with full account syncs for the same instance.
 
+### Fixed
+- Fixed PostgreSQL advisory-lock parameter types that prevented account sync workers from claiming jobs. Automation-role claim failures now respect the retry limit, and database outages use increasing retry delays with diagnostic error codes.
+
 ## 2026-09-22
 
 ### Changed
