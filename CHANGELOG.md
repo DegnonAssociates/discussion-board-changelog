@@ -2,6 +2,12 @@
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-10-02
+
+### Added
+- Added an administrator-only endpoint to backfill one authorization automation from current Neon or MemberClicks data, appending its role to existing matching users without changing other account or subscription data.
+- Added resumable role-backfill jobs with tenant isolation, rule revision checks, bounded retries, progress reporting, and coordination with full account syncs for the same instance.
+
 ## 2026-09-22
 
 ### Changed
