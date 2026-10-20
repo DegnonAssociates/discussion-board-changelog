@@ -4,6 +4,11 @@ This changelog was assembled from the repository's git history. The project does
 
 ## 2026-10-20
 
+### Fixed
+- Reuse concurrently created external accounts during NeonCRM, MemberClicks, and JoynAMS login or manual sync, preventing duplicate-identity failures without overwriting the winning account's preferences.
+- Replace remaining legacy AWS clients for uploads and email history with SDK v3 clients to remove their deprecated URL parsing.
+- Disable Next.js gzip compression to avoid retained streaming listeners; hosting proxy/CDN compression should be verified after rollout.
+
 ### Added
 - Expanded email readiness checks to inspect SES sending status, quotas, sender identities, and configuration sets, with an explicit admin test-send option that verifies the SES message audit record and distinguishes missing diagnostic permissions from send failures.
 
