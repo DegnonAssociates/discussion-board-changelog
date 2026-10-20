@@ -6,6 +6,22 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-10-20
+
+### Added
+- Expanded email readiness checks to inspect SES sending status, quotas, sender identities, and configuration sets, with an explicit admin test-send option that verifies the SES message audit record and distinguishes missing diagnostic permissions from send failures.
+
+## 2026-10-19
+
+### Changed
+- Routed all application email directly through the local SES sender, removing the external mail relay and error-log service dependencies while preserving historical email analytics.
+- Queue reply notifications in the same transaction as each comment and deliver them through the background worker, so posting no longer waits for email delivery.
+
+### Fixed
+- Compile worker artifacts during the deployment build, preserve the existing worker start command as an alias, and validate local SES settings before starting background jobs. Added a read-only email rollout check.
+- Added fenced reply-job leases, bounded retries, per-recipient checkpoints, fresh eligibility checks, and test-environment suppression. Interrupted deliveries with uncertain outcomes are held for review instead of automatically resent.
+- Shared SES pacing across concurrent senders within each process, bounded request duration, and disabled implicit SDK retries of uncertain deliveries.
+
 ## 2026-10-02
 
 ### Added
