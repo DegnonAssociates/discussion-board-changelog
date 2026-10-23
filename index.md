@@ -9,6 +9,7 @@ This changelog was assembled from the repository's git history. The project does
 ## 2026-10-23
 
 ### Added
+- Added a daily 2 a.m. Eastern account-sync cron for active, non-test organizations, with provider routing, safe daily deduplication, read-only preview, and a 3 a.m. fallback on spring-forward day to replace the external CFML scheduler.
 - Added a Sevalla digest cron command and read-only preview for active, non-test organizations, with an 8 a.m. Eastern schedule that handles daylight-saving time. The cron shares the existing digest endpoint's enqueue logic and hourly deduplication.
 
 ### Fixed
