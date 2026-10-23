@@ -2,6 +2,14 @@
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-10-23
+
+### Added
+- Added a Sevalla digest cron command and read-only preview for active, non-test organizations, with an 8 a.m. Eastern schedule that handles daylight-saving time. The cron shares the existing digest endpoint's enqueue logic and hourly deduplication.
+
+### Fixed
+- Use Eastern calendar-day eligibility for cron-generated digests so daily subscribers are not skipped by small delivery-time differences or the spring daylight-saving change.
+
 ## 2026-10-20
 
 ### Fixed
