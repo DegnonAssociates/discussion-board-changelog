@@ -6,6 +6,11 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-10-26
+
+### Fixed
+- Allow any user authorized to post in a community to schedule new posts, with scheduling controls available in the post form and existing access and moderation rules preserved.
+
 ## 2026-10-23
 
 ### Added
