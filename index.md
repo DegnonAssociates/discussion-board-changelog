@@ -6,6 +6,12 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-10-30
+
+### Fixed
+- Correct React state synchronization in community navigation, lists, preferences, dialogs, and carousels. Keep form state scoped to the selected record and reset pagination with search and sort changes.
+- Keep member activity lookups working when legacy comments reference missing parent posts. Preserve comment counts and activity dates, use fallback titles, and omit unavailable post links instead of failing the member's entire sync.
+
 ## 2026-10-26
 
 ### Fixed
