@@ -6,6 +6,14 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-10-31
+
+### Added
+
+- Add an authenticated, instance-scoped Member Intel activity change feed with bounded pages, exact idempotent acknowledgments, durable deletion/relationship capture, and feed epochs. Existing member activity summaries remain compatible.
+- Prepare the additive database journal, receipt tables, runtime-role grants, and capture triggers in `docs/database/member-intel-activity-changes.sql`. The production migration has not been applied. Deploy this source feed before Member Intel's daily 2 AM Central changes-only consumer; see `docs/member-intel-activity-changes.md`.
+- Cover authentication, input validation, instance/consumer isolation, acknowledgments, and migration-required responses in contract tests.
+
 ## 2026-10-30
 
 ### Fixed
