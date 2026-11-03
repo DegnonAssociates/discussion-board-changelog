@@ -11,6 +11,7 @@ This changelog was assembled from the repository's git history. The project does
 ### Fixed
 
 - Let APPD Connect members upload and save files in the File Library of communities they can access.
+- Bundle Nunito and Roboto so production builds can complete without downloading fonts from Google.
 
 ## 2026-10-31
 
