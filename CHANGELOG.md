@@ -2,6 +2,12 @@
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-11-03
+
+### Fixed
+
+- Let APPD Connect members upload and save files in the File Library of communities they can access.
+
 ## 2026-10-31
 
 ### Added
