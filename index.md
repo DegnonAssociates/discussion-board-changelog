@@ -6,6 +6,12 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-11-05
+
+### Fixed
+
+- Allow APPD Connect members to create and delete File Library folders in communities they can access, including deletion of contained subfolders and documents after confirmation.
+
 ## 2026-11-03
 
 ### Fixed
