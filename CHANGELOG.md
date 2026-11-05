@@ -6,6 +6,7 @@ This changelog was assembled from the repository's git history. The project does
 
 ### Fixed
 
+- Keep Member Intel activity lookups working for legacy comments with null parent post IDs. Preserve comment counts, likes, activity dates, and fallback titles while omitting unavailable post links.
 - Allow APPD Connect members to create and delete File Library folders in communities they can access, including deletion of contained subfolders and documents after confirmation.
 
 ## 2026-11-03
