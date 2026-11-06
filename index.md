@@ -6,6 +6,12 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-11-06
+
+### Changed
+
+- Allow users in every organization to upload documents and create or delete File Library folders in communities they are authorized to view.
+
 ## 2026-11-05
 
 ### Fixed
