@@ -6,6 +6,12 @@ title: Changelog
 
 This changelog was assembled from the repository's git history. The project does not currently use annotated release tags, so entries below are grouped by date-based milestones and major change windows rather than formal versions.
 
+## 2026-11-10
+
+### Fixed
+
+- Allow all users with community access to rename and move File Library folders, completing folder management alongside existing creation, browsing, and deletion. Preserve community boundaries and folder hierarchy safeguards.
+
 ## 2026-11-06
 
 ### Changed
