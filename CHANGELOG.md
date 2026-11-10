@@ -6,6 +6,7 @@ This changelog was assembled from the repository's git history. The project does
 
 ### Fixed
 
+- Keep the communities search field visible and focused while results refresh, preserving the 350 ms debounce and marking the results as busy for assistive technology.
 - Allow all users with community access to rename and move File Library folders, completing folder management alongside existing creation, browsing, and deletion. Preserve community boundaries and folder hierarchy safeguards.
 
 ## 2026-11-06
